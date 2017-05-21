@@ -1595,10 +1595,6 @@
 		margin: 0 0 2em 0;
 		line-height: 1.8;
 	}
-.wsListCon {
-}
-.cal #cal {
-}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #484b49;
@@ -2791,8 +2787,6 @@
 					#header nav > ul > li:first-child {
 						margin-left: 0;
 					}
-#nav ul .fafa {
-}
 
 					#header nav > ul > li .button {
 						-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3529,8 +3523,6 @@
 			}
 
 	}
-#beyond {
-}
 
 /*rslides*/
 .rslides {
