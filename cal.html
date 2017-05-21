@@ -1,256 +1,239 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Robin Fogarty/Calendar</title>
-<link href="assets/css/main.css" rel="stylesheet" type="text/css">
-<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-<link rel="stylesheet" href="assets/css/fullcalendar.css" type="text/css">
-<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery-ui.custom.min.js"></script>
-<script src="assets/js/moment.min.js"></script>
-<script src="assets/js/fullcalendar.js"></script>
-<script src="assets/js/customFullCalemdar.js"></script>
+    <meta charset="UTF-8">
+    <title>Robin Fogarty/Calendar</title>
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/fullcalendar.css" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.custom.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.js"></script>
+    <script src="assets/js/customFullCalemdar.js"></script>
 
-<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>
- <!--JavaScript Document-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+        <!--JavaScript Document-->
 
-	$(document).ready(function() {
-	$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			selectable: false,
-			selectHelper: false,
-			select: function(start, end) {
-			var title = prompt('Event Title:');
-			var eventData;
-			if (title) {
-				eventData = {
-					title: title,
-					start: start,
-					end: end
-				};
-				$('#calendar').fullCalendar('renderEvent', eventData, true);
-			}
-			$('#calandar').fullCalendar('unselect');
-			},
-			editable: false,
-			eventLimit: true, // allow "more" link when too many events
-		/****************************************************************/	
-		/* This where to Put the dates that you need to add to calendar.
-		Make sure to add it just like the ones already here. Copy and paste 
-		one and just change pertinent Info */	
-		/***************************************************************/
-			events: [
-				{
-					title: 'Dubai National School - Dubai UAE',
-					start: '2017-01-06',
-					end: '2017-01-07'
-				},
-				/*{
-					title: 'Roechester, NY',
-					start: '2016-07-28',
-					
-				},*/
-				/*{
-					title: 'Preparing for the test of Life',
-					start: '2016-07-29'
-				},*/
-				/*{
-					
-					title: 'Roechester, NY',
-					start: '2016-07-29'
-				},*/
-				{
-					title: 'Woodridge Dist. 68 Woodridge, IL',
-					start: '2017-01-09',
-					
-				},
-				{
-					title: 'Churchill County Schools -NV',
-					start: '2017-01-10',
-					
-				},
-				{
-					title: 'South Charlotte MS, Charlotte, NC',
-					start: '2017-01-13',
-					
-				},
-				
-				{
-					title: 'Eaton Community Schools Eaton, OH',
-					start: '2017-01-17',
-					
-				},
-				{
-					title: 'Diamond Tech HS Watsonville, CA',
-					start: '2017-01-17',
-				},
-				{
-					title: 'Dubai International School Dubai UAE',
-					start: '2017-01-20'
-				},
-				{
-					title: 'Dubai International School Dubai UAE',
-					start: '2017-01-21'
-				},
-				{
-					title: 'Dubai American Academy Dubai UAE',
-					start: '2017-02-07'
-				},
-				{
-					title: 'Dubai American Academy Dubai UAE',
-					start: '2017-02-08'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-10'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-11'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-12'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-13'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-14'
-				},
-				{
-					title: 'RFA Retreat Cabo San Lucas',
-					start: '2017-02-15'
-				},
-				{
-					title: 'Three Rivers Schools Cleves, OH',
-					start: '2017-02-17'
-				},
-				{
-					title: 'Schools on Brink of Greatness SF, NM',
-					start: '2017-02-20'
-				},
-				{
-					title: 'Schools on Brink of Greatness SF, NM',
-					start: '2017-02-21'
-				},
-				{
-					title: 'Schools on Brink of Greatness SF, NM',
-					start: '2017-02-22'
-				},
-				{
-					title: 'South Charlotte MS, Charlotte, NC',
-					start: '2017-03-13'
-				},
-				{
-					title: 'Dubai - 21st Century Assessments',
-					start: '2017-03-12'
-				},
-				{
-					title: 'Dubai - 21st Century Assessments',
-					start: '2017-03-13'
-				},
-				{
-					title: 'ASCD Anaheim Session Title: S',
-					start: '2017-03-27'
-				},
-			]
-		});
-		
-	});
-	$('#my-today-button').click(function() {
-    $('#calendar').fullCalendar('today');
-});
-<!-- End Calendar Scheduling -->
-</script>
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58be23786871690011006eef&product=inline-share-buttons"></script>
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                selectable: false,
+                selectHelper: false,
+                select: function(start, end) {
+                    var title = prompt('Event Title:');
+                    var eventData;
+                    if (title) {
+                        eventData = {
+                            title: title,
+                            start: start,
+                            end: end
+                        };
+                        $('#calendar').fullCalendar('renderEvent', eventData, true);
+                    }
+                    $('#calandar').fullCalendar('unselect');
+                },
+                editable: false,
+                eventLimit: true, // allow "more" link when too many events
+                /****************************************************************/
+                /* This where to Put the dates that you need to add to calendar.
+                Make sure to add it just like the ones already here. Copy and paste 
+                one and just change pertinent Info */
+                /***************************************************************/
+                events: [{
+                        title: 'Dubai National School - Dubai UAE',
+                        start: '2017-01-06',
+                        end: '2017-01-07'
+                    },
+                    /*{
+                    	title: 'Roechester, NY',
+                    	start: '2016-07-28',
+                    	
+                    },*/
+                    /*{
+                    	title: 'Preparing for the test of Life',
+                    	start: '2016-07-29'
+                    },*/
+                    /*{
+                    	
+                    	title: 'Roechester, NY',
+                    	start: '2016-07-29'
+                    },*/
+                    {
+                        title: 'Woodridge Dist. 68 Woodridge, IL',
+                        start: '2017-01-09',
+
+                    }, {
+                        title: 'Churchill County Schools -NV',
+                        start: '2017-01-10',
+
+                    }, {
+                        title: 'South Charlotte MS, Charlotte, NC',
+                        start: '2017-01-13',
+
+                    },
+
+                    {
+                        title: 'Eaton Community Schools Eaton, OH',
+                        start: '2017-01-17',
+
+                    }, {
+                        title: 'Diamond Tech HS Watsonville, CA',
+                        start: '2017-01-17',
+                    }, {
+                        title: 'Dubai International School Dubai UAE',
+                        start: '2017-01-20'
+                    }, {
+                        title: 'Dubai International School Dubai UAE',
+                        start: '2017-01-21'
+                    }, {
+                        title: 'Dubai American Academy Dubai UAE',
+                        start: '2017-02-07'
+                    }, {
+                        title: 'Dubai American Academy Dubai UAE',
+                        start: '2017-02-08'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-10'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-11'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-12'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-13'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-14'
+                    }, {
+                        title: 'RFA Retreat Cabo San Lucas',
+                        start: '2017-02-15'
+                    }, {
+                        title: 'Three Rivers Schools Cleves, OH',
+                        start: '2017-02-17'
+                    }, {
+                        title: 'Schools on Brink of Greatness SF, NM',
+                        start: '2017-02-20'
+                    }, {
+                        title: 'Schools on Brink of Greatness SF, NM',
+                        start: '2017-02-21'
+                    }, {
+                        title: 'Schools on Brink of Greatness SF, NM',
+                        start: '2017-02-22'
+                    }, {
+                        title: 'South Charlotte MS, Charlotte, NC',
+                        start: '2017-03-13'
+                    }, {
+                        title: 'Dubai - 21st Century Assessments',
+                        start: '2017-03-12'
+                    }, {
+                        title: 'Dubai - 21st Century Assessments',
+                        start: '2017-03-13'
+                    }, {
+                        title: 'ASCD Anaheim Session Title: S',
+                        start: '2017-03-27'
+                    },
+                ]
+            });
+
+        });
+        $('#my-today-button').click(function() {
+            $('#calendar').fullCalendar('today');
+        });
+        <!-- End Calendar Scheduling -->
+    </script>
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58be23786871690011006eef&product=inline-share-buttons"></script>
 </head>
 
 <body class="cal">
-<!-- Header -->
-<header id="header" class="alt">
-  <h1 id="logo"><a href="indexRFA.html"><img src="images/Home/RFALogo.png"  alt="Logo" width="100"></a></h1>
-  <nav id="nav">
-    <ul>
-      <li><a href="indexRFA.html">Home</a> 
-      <ul>
-      	<li><a href="robin.html">Robin</a></li>
-      	<li><a href="brianPete.html">Brian</a></li>
-      </ul>
-      </li>
-      <li><a href="conferences.html">Conferences</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="gifts.html">Gifts</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="workshops.html"> PD Workshops</a>
-        <ul>
-          <li><a href="teachLearn.html">Teaching Learning Equation</a></li>
-          <li><a href="twentyFirst.html">21st Century Learning</a></li>
-          <li><a href="rtbl.html">Right to be Literate</a></li>
-          <li><a href="staffroom.html">Staffroom to Classroom</a></li>
-        </ul>
-      </li>
-      <li><a href="cal.html" class="button alt">Calendar</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1 id="logo">
+            <a href="indexRFA.html"><img src="images/Home/RFALogo.png" alt="Logo" width="100"></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="indexRFA.html">Home</a>
+                    <ul>
+                        <li><a href="robin.html">Robin</a></li>
+                        <li><a href="brianPete.html">Brian</a></li>
+                    </ul>
+                </li>
+                <li><a href="conferences.html">Conferences</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="workshops.html"> PD Workshops</a>
+                    <ul>
+                        <li><a href="teachLearn.html">Teaching Learning Equation</a></li>
+                        <li><a href="twentyFirst.html">21st Century Learning</a></li>
+                        <li><a href="rtbl.html">Right to be Literate</a></li>
+                        <li><a href="staffroom.html">Staffroom to Classroom</a></li>
+                    </ul>
+                </li>
+                <li><a href="cal.html" class="button alt">Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="myCalendar">
-  <h1 class="calh1">Robin Fogarty and Associates</h1>
-  <ul class="icons">
-    <li><a href="https://twitter.com/RFATeachPD"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="https://www.instagram.com/robinfogartyteachpd/"><i class="fa fa-instagram"></i></a></li>
-    <li><a href="https://robinfogartydotcom.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
-  </ul>
-</div>
-<div class="myCalendar" id="calendar"></div>
-<p>
-<ul class="mailCal">
-  <li><a href="mailto:info@robinfogarty.com">Email us at: info@robinfogarty.com</a></li>
-</ul>
-</p>
-<div class="sharethis-inline-share-buttons"></div>
-<!-- Footer -->
-<div id="footer">
-  <div class="container">
-    <section class="footer-info">
-      <h3>Contact Us:</h3>
-      <ul class="labeled-icons">
-        <li>
-          <h4 class="icon fa-home"><span class="label">Address</span></h4>
-          1300 North Astor Suite 24B
-          Chicago IL, 60610</li>
-        <li>
-          <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
-          1-(800)-213-9246</li>
-        <li>
-          <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
-          <a href="mailto:info@robinfogarty.com">info@robinfogarty.com</a></li>
-        <li>
-          <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
-          <a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/">facebook.com/RobinFogartyandAssociates</a></li>
-        <li>
-          <h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
-          <a href="https://twitter.com/RFATeachPD">twitter.com/RFATeachPD</a></li>
-      </ul>
-    </section>
-  </div>
-  <div class="copyright"> &copy; robinfogarty.com. All rights reserved. </div>
-</div><!-- End Footer -->
-<script src="assets/js/jquery.dropotron.min.js"></script> 
-<script src="assets/js/skel.min.js"></script> 
-<script src="assets/js/util.js"></script> 
-<script src="assets/js/main.js"></script>
+    <div class="myCalendar">
+        <h1 class="calh1">Robin Fogarty and Associates</h1>
+        <ul class="icons">
+            <li><a href="https://twitter.com/RFATeachPD"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/robinfogartyteachpd/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://robinfogartydotcom.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
+        </ul>
+    </div>
+    <div class="myCalendar" id="calendar"></div>
+    <p>
+        <ul class="mailCal">
+            <li><a href="mailto:info@robinfogarty.com">Email us at: info@robinfogarty.com</a></li>
+        </ul>
+    </p>
+    <div class="sharethis-inline-share-buttons"></div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <section class="footer-info">
+                <h3>Contact Us:</h3>
+                <ul class="labeled-icons">
+                    <li>
+                        <h4 class="icon fa-home"><span class="label">Address</span></h4>
+                        1300 North Astor Suite 24B Chicago IL, 60610</li>
+                    <li>
+                        <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+                        1-(800)-213-9246</li>
+                    <li>
+                        <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
+                        <a href="mailto:info@robinfogarty.com">info@robinfogarty.com</a></li>
+                    <li>
+                        <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
+                        <a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/">facebook.com/RobinFogartyandAssociates</a></li>
+                    <li>
+                        <h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
+                        <a href="https://twitter.com/RFATeachPD">twitter.com/RFATeachPD</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="copyright"> &copy; robinfogarty.com. All rights reserved. </div>
+    </div>
+    <!-- End Footer -->
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
