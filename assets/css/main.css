@@ -2640,7 +2640,7 @@
 
 		.wrapper.style2 {
 	background-attachment: scroll, fixed;
-	background-image: url(../../images/banner.jpg), url("../../images/banner.jpg");
+	background-image: url(../../images/Misc/banner.jpg), url("../../images/Misc/banner.jpg");
 	background-position: center center;
 	background-size: cover;
 	color: #ffffff;
@@ -2930,7 +2930,7 @@
 	padding-left: 0;
 	padding-bottom: 2em;
 	background-attachment: scroll, fixed;
-	background-image: url(../../images/banner_2.jpg), url("../../images/banner.jpg");
+	background-image: url(../../images/Misc/banner_2.jpg), url("../../images/Misc/banner.jpg");
 	background-position: center center;
 	background-size: cover;
 	color: #ffffff;

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
    /*Main*/
 .landing #banner .top {
 	padding-left: 12rem;
@@ -47,7 +48,7 @@ li a .fa.fa-wordpress {
  
   /* BookStore*/
 .booksPage {
-	background-image: url(../../images/bodyPage.jpg);
+	background-image: url(../../images/Misc/bodyPage.jpg);
 	background-size: cover;
 }
 .booksPage .icons {
@@ -214,11 +215,16 @@ bigVideo {
 	list-style-type: none
 !important;
 }
-.row.gallery {
-	padding-top: 1rem;
+.galleryAllAbout {
+	padding-top: 2rem;
 }
 .center {
 	text-align: center;
+}
+.bean {
+	padding-left: 0px;
+}
+.gifts {
 }
 
 @media (max-width:480px){
@@ -254,6 +260,8 @@ bigVideo {
 	padding-top: 30px;
 }
 }
+
+
 hr.style17 {
 	border-top: 1px solid #FD9999;
 	text-align: center;
@@ -318,59 +326,9 @@ hr.colored2 {
 
 
 
-/*slider*/
+/*video*/
 
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
 
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 100%;
-  border: 0;
-  }
-.fancybox-type-iframe .fancybox-nav {
-    width: 60px;       
-}
-
-.fancybox-type-iframe .fancybox-nav span {
-    visibility: visible;
-    opacity: 0.5;
-}
-
-.fancybox-type-iframe .fancybox-nav:hover span {
-    opacity: 1;
-}
-
-.fancybox-type-iframe .fancybox-next {
-    right: -60px;
-}
-
-.fancybox-type-iframe .fancybox-prev {
-    left: -60px;
-}
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -418,3 +376,27 @@ a.control_next {
   right: 0;
   border-radius: 2px 0 0 2px;
 }
+
+@media (max-width:480px){
+.drop {
+	visibility: hidden;
+}
+}
+
+
+.hallmarkHome {
+	margin-top: 1rem;
+	padding:20px;
+}
+/* Gift Images*/
+.gifts {
+	-webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+     opacity: 0.5;
+}
+.gifts:hover {
+	-webkit-opacity: 1;
+    -moz-opacity: 1;
+     opacity: 1;
+}
+

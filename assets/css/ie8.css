@@ -94,7 +94,7 @@
 	}
 
 	.wrapper.style2 {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/Misc/banner.jpg");
 		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
@@ -132,7 +132,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/Misc/banner.jpg");
 		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
