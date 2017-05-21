@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 /*Main*/
 
+=======
+
+   /*Main*/
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 .landing #banner .top {
     padding-left: 12rem;
     padding-right: 12rem;
@@ -57,8 +62,13 @@ li a .fa.fa-wordpress {
 /* BookStore*/
 
 .booksPage {
+<<<<<<< HEAD
     background-image: url(../../images/bodyPage.jpg);
     background-size: cover;
+=======
+	background-image: url(../../images/Misc/bodyPage.jpg);
+	background-size: cover;
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 }
 
 .booksPage .icons {
@@ -254,13 +264,23 @@ bigVideo {
 .imgGal {
     list-style-type: none !important;
 }
+<<<<<<< HEAD
 
 .row.gallery {
     padding-top: 1rem;
+=======
+.galleryAllAbout {
+	padding-top: 2rem;
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 }
 
 .center {
     text-align: center;
+}
+.bean {
+	padding-left: 0px;
+}
+.gifts {
 }
 
 @media (max-width:480px) {
@@ -292,6 +312,10 @@ bigVideo {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 hr.style17 {
     border-top: 1px solid #FD9999;
     text-align: center;
@@ -365,6 +389,7 @@ hr.colored2 {
 }
 
 
+<<<<<<< HEAD
 /*slider*/
 
 .rslides {
@@ -411,15 +436,19 @@ hr.colored2 {
 .fancybox-type-iframe .fancybox-nav:hover span {
     opacity: 1;
 }
+=======
 
-.fancybox-type-iframe .fancybox-next {
-    right: -60px;
-}
+/*video*/
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 
+
+<<<<<<< HEAD
 .fancybox-type-iframe .fancybox-prev {
     left: -60px;
 }
 
+=======
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -467,6 +496,36 @@ a.control_prev {
 }
 
 a.control_next {
+<<<<<<< HEAD
     right: 0;
     border-radius: 2px 0 0 2px;
 }
+=======
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+@media (max-width:480px){
+.drop {
+	visibility: hidden;
+}
+}
+
+
+.hallmarkHome {
+	margin-top: 1rem;
+	padding:20px;
+}
+/* Gift Images*/
+.gifts {
+	-webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+     opacity: 0.5;
+}
+.gifts:hover {
+	-webkit-opacity: 1;
+    -moz-opacity: 1;
+     opacity: 1;
+}
+
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e

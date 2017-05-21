@@ -109,6 +109,14 @@ input[type="button"].alt,
     -ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 }
 
+<<<<<<< HEAD
+=======
+	.wrapper.style2 {
+		background-image: url("../../images/Misc/banner.jpg");
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
 
 /* Header */
 
@@ -143,8 +151,16 @@ input[type="button"].alt,
 
 /* Banner */
 
+<<<<<<< HEAD
 #banner {
     background-image: url("../../images/banner.jpg");
     background-size: cover;
     -ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 }
+=======
+	#banner {
+		background-image: url("../../images/Misc/banner.jpg");
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+>>>>>>> d44c7853d0870a1d10c47870c045011c6894766e
