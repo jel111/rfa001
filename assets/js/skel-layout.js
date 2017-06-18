@@ -20,7 +20,7 @@
 				medium: "(max-width: 980px)",
 				small:  "(max-width: 736px)",
 				xsmall: "(max-width: 480px)",
-				
+				xxsmall: "(max-width: 320px)",
 
 			// Box model (false = don't apply a box model).
 				boxModel: false,

@@ -60,6 +60,9 @@
      margin-top: 1rem;
      margin-bottom: -4rem;
  }
+.icons.topIcon {
+	padding-bottom: 28px;
+}
  /*Calendar*/
  
  .cal {
@@ -263,6 +266,9 @@
  .bean {
      padding-left: 0px;
  }
+.image.fit.videoPage {
+	padding-left: 25px;
+}
  
  @media (max-width:480px) {
      .videoWrapper {
@@ -493,4 +499,21 @@
      -webkit-opacity: 1;
      -moz-opacity: 1;
      opacity: 1;
+ }
+
+@media (max-width:360px){
+.image.fit.videoPage {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	right: 0%;
+}
+}
+#twitter-widget-0 {
+height: 1000px !important;
+ }
+
+@media (min-width: 768px) {
+#twitter-widget-0 {
+ height: 600px !important;
  }
