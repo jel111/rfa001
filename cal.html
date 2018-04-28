@@ -17,9 +17,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
     <script>
-        <!--JavaScript Document-->
-
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#calendar').fullCalendar({
                 header: {
                     left: 'prev,next',
@@ -28,7 +26,7 @@
                 },
                 selectable: false,
                 selectHelper: false,
-                select: function(start, end) {
+                select: function (start, end) {
                     var title = prompt('Event Title:');
                     var eventData;
                     if (title) {
@@ -45,7 +43,8 @@
                 eventLimit: true, // allow "more" link when too many events
                 /****************************************************************/
                 /* This where to Put the dates that you need to add to calendar.
-                Make sure to add it just like the ones already here. Copy and paste 
+                Make sure to add it just like the ones already here. Start with { and end with the comma. 
+                Copy and paste 
                 one and just change pertinent Info */
                 /***************************************************************/
                 events: [{
@@ -53,20 +52,6 @@
                         start: '2017-01-06',
                         end: '2017-01-07'
                     },
-                    /*{
-                    	title: 'Roechester, NY',
-                    	start: '2016-07-28',
-                    	
-                    },*/
-                    /*{
-                    	title: 'Preparing for the test of Life',
-                    	start: '2016-07-29'
-                    },*/
-                    /*{
-                    	
-                    	title: 'Roechester, NY',
-                    	start: '2016-07-29'
-                    },*/
                     {
                         title: 'Woodridge Dist. 68 Woodridge, IL',
                         start: '2017-01-09',
@@ -147,10 +132,9 @@
             });
 
         });
-        $('#my-today-button').click(function() {
+        $('#my-today-button').click(function () {
             $('#calendar').fullCalendar('today');
         });
-        <!-- End Calendar Scheduling -->
     </script>
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58be23786871690011006eef&product=inline-share-buttons"></script>
 </head>
@@ -158,30 +142,51 @@
 <body class="cal">
     <!-- Header -->
     <header id="header" class="alt">
-        <h1 id="logo">
-            <a href="indexRFA.html"><img src="images/Home/RFALogo.png" alt="Logo" width="100"></a>
-        </h1>
-        <nav id="nav">
+        <nav id="nav" class="nav">
             <ul>
-                <li><a href="indexRFA.html">Home</a>
+                <li>
+                    <a href="indexRFA.html">Home</a>
                     <ul>
-                        <li><a href="robin.html">Robin</a></li>
-                        <li><a href="brianPete.html">Brian</a></li>
+                        <li>
+                            <a href="robin.html">Robin</a>
+                        </li>
+                        <li>
+                            <a href="brianPete.html">Brian</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="conferences.html">Conferences</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="gifts.html">Gifts</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="workshops.html"> PD Workshops</a>
+                <li>
+                    <a href="conferences.html">Conferences</a>
+                </li>
+                <li>
+                    <a href="books.html">Books</a>
+                </li>
+                <li>
+                    <a href="gifts.html">Gifts</a>
+                </li>
+                <li>
+                    <a href="videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="workshops.html"> PD Workshops</a>
                     <ul>
-                        <li><a href="teachLearn.html">Teaching Learning Equation</a></li>
-                        <li><a href="twentyFirst.html">21st Century Learning</a></li>
-                        <li><a href="rtbl.html">Right to be Literate</a></li>
-                        <li><a href="staffroom.html">Staffroom to Classroom</a></li>
+                        <li>
+                            <a href="teachLearn.html">Teaching Learning Equation</a>
+                        </li>
+                        <li>
+                            <a href="twentyFirst.html">21st Century Learning</a>
+                        </li>
+                        <li>
+                            <a href="rtbl.html">Right to be Literate</a>
+                        </li>
+                        <li>
+                            <a href="staffroom.html">Staffroom to Classroom</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="cal.html" class="button alt">Calendar</a></li>
+                <li>
+                    <a href="cal.html" class="button alt">Calendar</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -189,16 +194,34 @@
     <div class="myCalendar">
         <h1 class="calh1">Robin Fogarty and Associates</h1>
         <ul class="icons">
-            <li><a href="https://twitter.com/RFATeachPD"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/robinfogartyteachpd/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://robinfogartydotcom.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
+            <li>
+                <a href="https://twitter.com/RFATeachPD">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/robinfogartyteachpd/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://robinfogartydotcom.wordpress.com">
+                    <i class="fa fa-wordpress"></i>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="myCalendar" id="calendar"></div>
     <p>
         <ul class="mailCal">
-            <li><a href="mailto:info@robinfogarty.com">Email us at: info@robinfogarty.com</a></li>
+            <li>
+                <a href="mailto:info@robinfogarty.com">Email us at: info@robinfogarty.com</a>
+            </li>
         </ul>
     </p>
     <div class="sharethis-inline-share-buttons"></div>
@@ -209,20 +232,33 @@
                 <h3>Contact Us:</h3>
                 <ul class="labeled-icons">
                     <li>
-                        <h4 class="icon fa-home"><span class="label">Address</span></h4>
+                        <h4 class="icon fa-home">
+                            <span class="label">Address</span>
+                        </h4>
                         1300 North Astor Suite 24B Chicago IL, 60610</li>
                     <li>
-                        <h4 class="icon fa-phone"><span class="label">Phone</span></h4>
+                        <h4 class="icon fa-phone">
+                            <span class="label">Phone</span>
+                        </h4>
                         1-(800)-213-9246</li>
                     <li>
-                        <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
-                        <a href="mailto:info@robinfogarty.com">info@robinfogarty.com</a></li>
+                        <h4 class="icon fa-envelope">
+                            <span class="label">Email</span>
+                        </h4>
+                        <a href="mailto:info@robinfogarty.com">info@robinfogarty.com</a>
+                    </li>
                     <li>
-                        <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
-                        <a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/">facebook.com/RobinFogartyandAssociates</a></li>
+                        <h4 class="icon fa-facebook">
+                            <span class="label">Facebook</span>
+                        </h4>
+                        <a href="https://www.facebook.com/Robin-Fogarty-Associates-117041038323129/">facebook.com/RobinFogartyandAssociates</a>
+                    </li>
                     <li>
-                        <h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
-                        <a href="https://twitter.com/RFATeachPD">twitter.com/RFATeachPD</a></li>
+                        <h4 class="icon fa-twitter">
+                            <span class="label">Twitter</span>
+                        </h4>
+                        <a href="https://twitter.com/RFATeachPD">twitter.com/RFATeachPD</a>
+                    </li>
                 </ul>
             </section>
         </div>
