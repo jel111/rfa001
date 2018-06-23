@@ -4,49 +4,42 @@
     john@designmobilenow.com /
     License: pixelarity.com/license
 -->
-<html lang="en">
+<html>
 
 <head>
-  <title>Robin Fogarty/Home</title>
+  <title>Robin Fogarty</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Yesteryear" rel="stylesheet">
   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-
-  <link href="assets/css/custom02.css" rel="stylesheet" type="text/css">
-  <!-- fotorama.css & fotorama.js. -->
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-  <!-- 3 KB -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-  <!-- 16 KB -->
+  <link rel="stylesheet" href="assets/css/main.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <script>
-    window.twttr = (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function (f) {
-        t._e.push(f);
-      };
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script>
 </head>
+<script>
+  window.twttr = (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
 
-<body class="landing">
+    t._e = [];
+    t.ready = function (f) {
+      t._e.push(f);
+    };
+    return t;
+  }(document, "script", "twitter-wjs"));
+</script>
+
+
+<body class="booksPage">
   <!-- Header -->
   <header id="header" class="alt">
+    <h1 id="logo"></h1>
     <!-- Nav -->
-    <nav id="nav" class="nav">
+    <nav id="nav" class="nav navSecondary">
       <ul>
         <li>
           <a href="indexRFA.html">Home</a>
@@ -343,7 +336,6 @@
   <script src="assets/js/jquery.dropotron.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/jquery.scrollgress.min.js"></script>
-  <script src="assets/js/skel-layout.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->

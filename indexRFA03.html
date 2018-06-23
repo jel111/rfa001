@@ -11,13 +11,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Londrina+Shadow" rel="stylesheet">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link href="assets/css/slick.css" rel="stylesheet" type="text/css">
     <link href="assets/css/slick-theme.css" rel="stylesheet" type="text/css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link href="assets/css/main03.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/custom03.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/custom03.css" rel="stylesheet" type="text/css"> -->
     <script>
         window.twttr = (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
@@ -48,11 +48,12 @@
     </script>
 </head>
 
-<body class="landing">
+<body class="booksPage">
     <!-- Header -->
     <header id="header" class="alt">
+        <h1 id="logo"></h1>
         <!-- Nav -->
-        <nav id="nav" class="nav">
+        <nav id="nav" class="nav navSecondary">
             <ul>
                 <li>
                     <a href="indexRFA.html">Home</a>
@@ -104,10 +105,10 @@
     <!-- End Header -->
     <!-- Banner -->
     <section id="banner" class="banner_home">
-        <span class="rfa">RFA
-            <span class="tea" style="color: red">teach</span>PD
-        </span>
-        <p class="topTitle">Robin Fogarty and Associates</p>
+        <img class="titleRFA 4u" src="images/Home/RFA_Title01.png" alt="RFA Title Images">
+        <!-- <span class="tea" style="color: red">teach</span>PD
+        </img>
+        <p class="topTitle">Robin Fogarty and Associates</p>-->
         <ul class="icons">
             <li>
                 <a href="https://twitter.com/RFATeachPD">
@@ -133,15 +134,15 @@
         <!-- Slick-->
         <div class="container">
             <div class="wrapper_slide">
-                <div class="slick-slider slick">
+                <div class="slick-slider slick image fit">
                     <a href="twentyFirst.html#pbl">
                         <img src="https://res.cloudinary.com/devmobnow/image/upload/v1524855108/sliderRFA_ProblemBased.jpg" alt="Invite Ignite Excite Book Image"> </a>
                     <a href="staffroom.html">
-                        <img src="https://res.cloudinary.com/devmobnow/image/upload/v1524855107/who_talking_slider.jpg" alt="Make Learning Stick Book Image"> </a>
+                        <img src="https://res.cloudinary.com/devmobnow/image/upload/v1528298269/MetaSlider.jpg" alt="Make Learning Stick Book Image"> </a>
                     <a href="workshops.html">
                         <img src="https://res.cloudinary.com/devmobnow/image/upload/v1524855107/staff_slide.jpg" alt="Problem Based Learning Book Image"> </a>
                     <a href="rtbl.html">
-                        <img src="https://res.cloudinary.com/devmobnow/image/upload/v1524855107/makeLearning_slide.jpg" alt="Staffroom to Classroom Book Image"> </a>
+                        <img src="https://res.cloudinary.com/devmobnow/image/upload/v1528298257/thinking.jpg" fialt="Staffroom to Classroom Book Image"> </a>
                     <a href="workshops.html">
                         <img src="https://res.cloudinary.com/devmobnow/image/upload/v1524854741/RTBL_slider.jpg" alt="Look Who's Talking Cartoon"> </a>
                     <a href="rtbl.html">
@@ -168,19 +169,22 @@
         <div class="container blog">
             <div class="12u blogImg">
                 <span class="image fit">
-                    <img src="images/Home/blog_header.jpg" alt="Blog Header Image" />
+                    <a href="https://robinfogartydotcom.wordpress.com">
+                        <img src="images/Home/blog_header.jpg" alt="Blog Header Image" />
+                    </a>
                 </span>
             </div>
             <div class="12u blogText">
                 <h3>WE Believe every student can be thinking at grade level</h3>
                 <p>Robin and Brian’s latest thinking, current writings, cutting-edge resources. </p>
-                <div class="blogDiv">
-                    <a href="https://robinfogartydotcom.wordpress.com/" class="button special blogBut">More Robin</a>
-                    <a href="https://robinfogartydotcom.wordpress.com/" class="button special blogBut">Visit Our blog</a>
-                    <a href="https://robinfogartydotcom.wordpress.com/" class="button special blogBut">More Brian</a>
-                </div>
             </div>
+            <div class="">
+                <a href="robinfogarty.html" class="button special blogBut">More Robin</a>
 
+                <a href="https://robinfogartydotcom.wordpress.com/" class="button special blogBut">Visit Our blog</a>
+
+                <a href="brianPete.html" class="button special blogBut">More Brian</a>
+            </div>
         </div>
     </section>
     <!-- End Blog -->
@@ -321,7 +325,7 @@
                     <a href="videos.html#contact" class="button special">Contact</a>
                 </li>
                 <li>
-                    <a href="videos.html" class="button alt">Learn More</a>
+                    <a href="workshops.html" class="button alt">Learn More</a>
                 </li>
             </ul>
         </div>

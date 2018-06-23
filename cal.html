@@ -6,7 +6,7 @@
     <title>Robin Fogarty/Calendar</title>
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/fullcalendar.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/fullcalendar.min.css" type="text/css">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.custom.min.js"></script>
@@ -127,6 +127,21 @@
                     }, {
                         title: 'ASCD Anaheim Session Title: S',
                         start: '2017-03-27'
+                    }, {
+                        title: 'Ostego NY',
+                        start: '2018-06-26'
+                    }, {
+                        title: 'Ostego NY',
+                        start: '2018-06-27'
+                    }, {
+                        title: 'Metuchen NJ',
+                        start: '2018-06-28'
+                    }, {
+                        title: 'Metuchen NJ',
+                        start: '2018-06-29'
+                    }, {
+                        title: 'ASCD CTE Denver CO',
+                        start: '2018-06-30'
                     },
                 ]
             });
@@ -142,7 +157,8 @@
 <body class="cal">
     <!-- Header -->
     <header id="header" class="alt">
-        <nav id="nav" class="nav">
+        <h1 id="logo"></h1>
+        <nav id="nav" class="nav navSecondary">
             <ul>
                 <li>
                     <a href="indexRFA.html">Home</a>
@@ -191,9 +207,9 @@
         </nav>
     </header>
 
-    <div class="myCalendar">
-        <h1 class="calh1">Robin Fogarty and Associates</h1>
-        <ul class="icons">
+    <div>
+        <h1 class="align-center">Robin Fogarty and Associates</h1>
+        <ul class="icons align-center">
             <li>
                 <a href="https://twitter.com/RFATeachPD">
                     <i class="fa fa-twitter"></i>
