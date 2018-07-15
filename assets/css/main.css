@@ -2571,7 +2571,7 @@ input[type="button"]:disabled,
 
 .wrapper.style2 {
     background-attachment: scroll, fixed;
-    background-image: url("../../images/Misc/banner.jpg"), url("../../images/Misc/banner.jpg");
+    background-image: url("../../images/Misc/bodyPage.jpg"), url("../../images/Misc/bodyPage.jpg");
     background-position: center center;
     background-size: cover;
     color: #ffffff;
@@ -2853,7 +2853,7 @@ body.landing {
 #banner {
     padding: 0 0 13em 0;
     background-attachment: scroll, fixed;
-    background-image: url("images/Misc/banner_2.jpg"), url("../../images/Misc/banner_2.jpg");
+    background-image: url("../../images/Misc/bodyPage.jpg"), url("../../images/Misc/bodyPage.jpg");
     background-position: center center;
     background-size: cover;
     color: #ffffff;
@@ -2965,7 +2965,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 0 0 11em 0;
+        padding: 0 0 1em 0;
     }
     /* Footer */
     #footer {
@@ -2985,7 +2985,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 12em 0 9em 0;
+        padding: 1em 0 9em 0;
     }
     #banner h2 {
         font-size: 2.5em;
@@ -3574,4 +3574,21 @@ hr.colored2 {
     -webkit-transform: scale(1.25);
     /* Safari 3-8 */
     transform: scale(1.25);
+}
+
+/* Social Button */
+
+.button.FB {
+    background-color: #3B5998;
+    color: white !important;
+}
+
+.button.blueStreak {
+    background-color: #3FB2DB;
+    color: white !important;
+}
+
+.button.blueStreak:hover {
+    background-color: rgb(123, 212, 244);
+    color: black !important;
 }
