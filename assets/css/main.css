@@ -2571,7 +2571,7 @@ input[type="button"]:disabled,
 
 .wrapper.style2 {
     background-attachment: scroll, fixed;
-    background-image: url("../../images/Misc/bodyPage.jpg"), url("../../images/Misc/bodyPage.jpg");
+    background-image: url("../../images/Misc/banner.jpg"), url("../../images/Misc/banner.jpg");
     background-position: center center;
     background-size: cover;
     color: #ffffff;
@@ -2683,7 +2683,7 @@ body.landing {
 #header nav {
     height: inherit;
     line-height: inherit;
-    position: relative;
+    /*position: relative;*/
     right: 1.25em;
     top: 0;
     vertical-align: middle;
@@ -2851,9 +2851,9 @@ body.landing {
 /* Banner */
 
 #banner {
-    padding: 0 0 13em 0;
+    padding: 4em 0 1em 0;
     background-attachment: scroll, fixed;
-    background-image: url("../../images/Misc/bodyPage.jpg"), url("../../images/Misc/bodyPage.jpg");
+    background-image: url("../../images/Misc/banner_2.jpg"), url("../../images/Misc/banner_2.jpg");
     background-position: center center;
     background-size: cover;
     color: #ffffff;
@@ -2965,7 +2965,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 0 0 1em 0;
+        padding: 4em 0 1em 0;
     }
     /* Footer */
     #footer {
@@ -2985,7 +2985,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 1em 0 9em 0;
+        padding: 3em 0 2em 0;
     }
     #banner h2 {
         font-size: 2.5em;
@@ -3048,7 +3048,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 0 4em 10em 4em;
+        padding: 0 4em 2em 4em;
     }
     #banner br {
         display: none;
@@ -3265,7 +3265,7 @@ body.is-touch #banner {
     }
     /* Banner */
     #banner {
-        padding: 0 2em 4em 2em;
+        padding: 0 2em 2em 2em;
     }
     #banner h2 {
         font-size: 1.5em;
@@ -3361,11 +3361,11 @@ body.is-touch #banner {
 
 /* Custom CSS */
 
-.booksPage {
-    background-image: url(../../images/Misc/bodyPage.jpg);
-    background-image: url(../../images/Misc/bodyPage.jpg);
+/*.booksPage {
+    background-image: url("../../images/Misc/banner_2.jpg");
+    background-image: url("../../images/Misc/banner_2.jpg");
     background-size: cover;
-}
+}*/
 
 .navSecondary {
     /* display: flex;
@@ -3513,81 +3513,21 @@ hr.colored2 {
     /* W3C */
 }
 
-/* Modal */
-
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.trigger {
-    padding: 1rem;
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    border: 5px solid #57a157;
-    border-radius: 0.5rem;
-}
-
-.close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-}
-
-.close-button:hover {
-    background-color: darkgray;
-}
-
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.zoom {
-    transition: transform .2s;
-}
-
-.zoom:hover {
-    -ms-transform: scale(1.25);
-    /* IE 9 */
-    -webkit-transform: scale(1.25);
-    /* Safari 3-8 */
-    transform: scale(1.25);
-}
-
 /* Social Button */
 
-.button.FB {
-    background-color: #3B5998;
+.button.faceShare {
+    background-color: rgb(59,89,152) !important;
     color: white !important;
+}
+.button.faceShare:hover {
+    background-color: #A4CCFA;
+    color: black !important;
 }
 
 .button.blueStreak {
     background-color: #3FB2DB;
     color: white !important;
 }
-
 .button.blueStreak:hover {
     background-color: rgb(123, 212, 244);
     color: black !important;

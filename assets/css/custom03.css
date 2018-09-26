@@ -13,7 +13,8 @@
  }
 
  .topTitle {
-     margin: 1rem 0 2rem 0;
+     margin: 3rem 0 2rem 0;
+    padding-top: 2rem;
  }
 
  /*Main*/
@@ -22,7 +23,8 @@
      margin-top: -5rem
  }
 
- .blog {
+ .blog,
+     {
      margin-top: -4rem;
      margin-bottom: -4rem;
  }
@@ -117,7 +119,7 @@
  /* BookStore*/
 
  .booksPage {
-     background-image: url(../../images/Misc/bodyPage.jpg);
+     background-image: url(../../images/bodyPage.jpg);
      background-image: url(../../images/Misc/bodyPage.jpg);
      background-size: cover;
  }
